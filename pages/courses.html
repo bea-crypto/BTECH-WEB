@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIT – Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+        }
+        header {
+            background: #003366;
+            color: #fff;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: #004080;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .container {
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        h2 {
+            color: #003366;
+            margin-bottom: 20px;
+        }
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .course {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .course h3 {
+            color: #004080;
+        }
+        footer {
+            background: #00264d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BIT Department</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Courses Offered</h2>
+        <p>Explore the core modules that shape the Bachelor of Information Technology Program.</p>
+    </section>
+
+    <div class="container">
+        <h2>Year 1 – Foundation Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Introduction to Programming</h3>
+                <p>Basics of coding using Python, problem-solving, and algorithmic thinking.</p>
+            </div>
+            <div class="course">
+                <h3>Computer Systems</h3>
+                <p>Understanding hardware, operating systems, and digital logic.</p>
+            </div>
+            <div class="course">
+                <h3>Web Development I</h3>
+                <p>HTML, CSS, and introduction to frontend web design.</p>
+            </div>
+        </div>
+
+        <h2>Year 2 – Intermediate Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Database Systems</h3>
+                <p>SQL, relational databases, and data management principles.</p>
+            </div>
+            <div class="course">
+                <h3>Networking Fundamentals</h3>
+                <p>Network models, protocols, IP addressing, and routing.</p>
+            </div>
+            <div class="course">
+                <h3>Object-Oriented Programming</h3>
+                <p>Java programming and reusable software design concepts.</p>
+            </div>
+        </div>
+
+        <h2>Year 3 – Advanced Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Cloud Computing</h3>
+                <p>Virtualization, cloud platforms, and scalable systems.</p>
+            </div>
+            <div class="course">
+                <h3>Cybersecurity</h3>
+                <p>Security threats, encryption, and ethical hacking fundamentals.</p>
+            </div>
+            <div class="course">
+                <h3>Mobile Application Development</h3>
+                <p>Android development with UI/UX principles.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Bachelor of Information Technology – All Rights Reserved</p>
+    </footer>
+</body>
+</html>

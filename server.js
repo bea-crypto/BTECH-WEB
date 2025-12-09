@@ -20,6 +20,16 @@ app.get('/contactus', (req, res) => {
     res.sendFile(path.join(__dirname, 'pages', 'contactus.html'));
 });
 
+app.get('/courses', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'courses.html'));
+});
+app.get('/departments', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'departments.html'));
+});
+
+app.get('/admissions', (req, res) => {
+    res.sendFile(path.join(__dirname, 'pages', 'admissions.html'));
+});
 // Start server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

@@ -1,89 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RP Ngoma College</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIT – Home</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-
-        /* Header */
-        header {
-            background-color: #222;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        /* Navigation Bar */
-        nav {
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main Content */
-        .container {
-            width: 80%;
-            margin: auto;
-            text-align: center;
-            padding: 40px 0;
-        }
-
-        .gallery-images img {
-            width: 200px;
-            height: 120px;
-            margin: 10px;
-            border-radius: 5px;
-            border: 2px solid #ccc;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
+        body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f9; }
+        header { background: #003366; color: white; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('hero.jpg'); background-size: cover; padding: 100px 40px; color: white; text-align: center; }
+        .hero h2 { font-size: 40px; margin-bottom: 10px; }
+        .container { max-width: 1100px; margin: auto; padding: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .box h3 { color: #003366; margin-bottom: 10px; }
+        footer { background: #00264d; color: white; padding: 20px; text-align: center; margin-top: 40px; }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>RP Ngoma College</h1>
+        <img src="logo.jpg">
+        <h1>BIT Department</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="departments.html">Departments</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About Us</a>
-    </nav>
+    <section class="hero">
+        <h2>Welcome to the Bachelor of Information Technology</h2>
+    </section>
 
     <div class="container">
-        <h1>Welcome to RP Ngoma College</h1>
-        <p>Providing quality education and skills for the future.</p>
+        <h2>Why Choose BIT?</h2>
+        <div class="grid">
+            <div class="box">
+                <h3>📚 Modern Curriculum</h3>
+                <p>Learn programming, networking, cybersecurity, AI, and more.</p>
+            </div>
+            <div class="box">
+                <h3>💻 Hands-On Training</h3>
+                <p>Work on real-world projects with modern technologies.</p>
+            </div>
+            <div class="box">
+                <h3>🌍 Career Opportunities</h3>
+                <p>Graduate ready for roles in software development, IT, and data science.</p>
+            </div>
+        </div>
 
-        <h2>Gallery</h2>
-
-        <div class="gallery-images">
-            <img src="1.jpg" alt="College Image 1">
-            <img src="2.jpg" alt="College Image 2">
-            <img src="image3.jpg" alt="College Image 3">
+        <h2 style="margin-top:40px;">Latest Updates</h2>
+        <div class="grid">
+            <div class="box">
+                <h3>✔ New AI & Data Science Track</h3>
+                <p>We now offer a specialization in Data Science and Artificial Intelligence.</p>
+            </div>
+            <div class="box">
+                <h3>✔ Internship Program</h3>
+                <p>BIT students now participate in top tech internships across Rwanda.</p>
+            </div>
+            <div class="box">
+                <h3>✔ Online Learning Portal</h3>
+                <p>Access courses, materials, and announcements from anywhere.</p>
+            </div>
         </div>
     </div>
 
+    <footer>
+        <p>© 2025 Bachelor of Information Technology – All Rights Reserved</p>
+    </footer>
 </body>
 </html>
